@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.techiesbase</groupId>
   <artifactId>spring1</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.5-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>spring1</name>
@@ -14,7 +13,8 @@
 		<connection>scm:git:https://github.com/shyamjava/applications</connection>
 		<developerConnection>scm:git:https://github.com/shyamjava/applications</developerConnection>
 		<url>https://github.com/shyamjava/applications</url>
-	</scm>
+	  <tag>spring1-0.0.2</tag>
+  </scm>
 	
 	<distributionManagement>
     <repository>
@@ -69,7 +69,14 @@
 				  <tag>${project.artifactId}-${project.version}</tag>
 				</configuration>
 		    </plugin>
-			
+			<plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.3.2</version>
+          <configuration>
+            <autoVersionSubmodules>true</autoVersionSubmodules>
+          </configuration>
+        </plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>versions-maven-plugin</artifactId>

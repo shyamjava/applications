@@ -16,7 +16,7 @@
 	   	<!--  Setter based injection -->	
 	   		
 	   	<bean id="app1" class="com.techiesbase.spring1.App">
-	   		<property name="name" value="Shyam"></property>
+	   		<property name="name" value="ShyamB"></property>
 	   	</bean>			   
 	   	
 	   	
